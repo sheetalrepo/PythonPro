@@ -17,44 +17,54 @@ print ("Hello World ...")
 
 
 print("\n=========== ProdBug : String ==========")
-str = "Python"
-print ">>>"+str          # It will prints complete string
-print str[0]       # It will prints first character of the string
-print str[2:5]     # It will prints characters starting from 3rd to 5th
-print str * 2      # It will prints string two times
-print str + " World" # It will prints concatenated string
-
-
-print("\n=========== ProdBug : List ==========")
-#List : Can contains any data types, can be modified, contains [] bracket
-list1 = ['a','b','c', 10, 20]
-list2 = ['apple', 'mango']
-print list1           # It will prints complete list
-print list1[0]         # It will prints first element of the list
-print list1 + list2   # It will prints concatenated lists
-list1[0] = 30          # Possible to update
-print list1
-
-
-print("\n=========== ProdBug : Tuples ==========")
-#Tuples : Can contains any data types, Can NOT be modified (Read Only Lists), contains () bracket
-tuple1 = ('a','b','c', 10, 20)
-tuple2 = ('apple', 'mango')
-print tuple1           # It will prints complete list
-print tuple1[0]         # It will prints first element of the list
-print tuple1 + tuple2   # It will prints concatenated lists
-#tuple1[0] = 30          # Possible to update
+str1 = "Python"
+print (">>>"+str1)          # It will prints complete string
+print (str1[0])       # It will prints first character of the string
+print (str1[2:5])     # It will prints characters starting from 3rd to 5th
+print (str1 * 2)      # It will prints string two times
+print (str1 + " World")  # It will prints concatenated string
 
 
 
-print("\n=========== ProdBug : Dictionary ==========")
-dict1 = {}
-dict1['one'] = "One"
-dict1[2]     = "Two"
-dict2 = {'id': 123,'name':'sheetal', 'dept': 'automation'}
+print("\n=========== ProdBug : Int, String, Casting ==========")
+x = 5
+y = "John"
+print(x)
+print(y)
 
-print dict1['one']
-print dict1[2]
-print dict2
-print dict2.keys()
-print dict2.values()
+a = str(3)    # a will be "3"
+b = int(3)    # b will be 3
+c = float(3)  # c will be 3.0
+print(a)
+print(b)
+print(c)
+
+
+print("\n=========== ProdBug : Naming: alphaNumeric, case sensitive and underscore allowed ==========")
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
+
+
+print("\n=========== ProdBug : Assign Mutiple Values ==========")
+x, y, z = "Apple", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+
+print("\n=========== ProdBug : + , inside print ==========")
+x, y = "Bat", "Ball"
+print(x, y)       # Concatenation with Space
+print(x + y)      # Concatenation w/o space
+
+
+# Good to use comma all the time
+x = 5
+y = "John"
+# print(x + y)  # error
+print(x, y)

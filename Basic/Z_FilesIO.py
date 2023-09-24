@@ -7,7 +7,7 @@ print("=========== ProdBug : User Input ==========")
 
 print("\n=========== ProdBug : File  ==========")
 #wb: open/create file for writing
-myFile = open("abc.txt", "wb")
+myFile = open("readme.txt", "wb")
 print "Name of the file: ", myFile.name
 myFile.write('We are learning Python 3')
 print('File written successfully')
@@ -17,7 +17,7 @@ myFile.close()
 
 print("\n=========== ProdBug : Exception ==========")
 #r: read access
-myFile2 = open("abc.txt", "r")
+myFile2 = open("readme.txt", "r")
 try:
     myFile2.write('We are learning Python')
 except IOError:

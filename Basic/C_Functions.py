@@ -1,21 +1,28 @@
-print("=========== ProdBug : Function : Pass By Reference ==========")
+print("=========== ProdBug : Function ==========")
+def sum(a,b):
+   c = a + b
+   return c
 
-def printMe( myList ):
+result = sum(10,20)
+print ('sum is:', result)
+
+
+print("=========== ProdBug : Function : Pass By Reference ==========")
+def changeMe( myList ):
    myList[0] = 100;   #updated
    return
 
-# Now you can call changeme function
 myList = [10,20,30];
-print myList
-printMe(myList);
-print myList      # original list also changed
+print (myList)
+changeMe(myList);    # Call changeMe function
+print (myList)      # original list also changed
 
 
 
 print("\n=========== ProdBug : Default Arg ==========")
 def defaultArg( name, age = 18 ):
-   print "Name: ", name
-   print "Age ", age
+   print ("Name: ", name)
+   print ("Age ", age)
    return;
 
 defaultArg( name="Prod", age=30 )
